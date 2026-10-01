@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.avatar {
+  animation: show 3s 0s linear;
+  width: 30vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 135px;
+  right: 63%;
+  border-radius: 50px;
+  border-color: green;
+}
+
+h1 {
+  font-size: 47px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: wavy;
+  animation: title 3s 0s alternate;
+}
+
+p {
+  font-size: 24px;
+  animation: title2 3.5s 0s alternate;
+}
+
+a {
+  background-color: rgb(0, 104, 35);
+  text-decoration: underline;
+  color: #f8f6f6;
+}
+div {
+  animation: title3 4s 0s alternate;
+  font-size: 24px;
+}
+.John {
+  animation: title 4s 0s alternate;
+  border-radius: 20px;
+  border: 5px;
+  border-color: rgb(17, 0, 255);
+}
+
+.content {
+  margin: 0 auto;
+  text-align: left;
+  width: 430px;
+}
+.bgleft {
+  position: relative;
+  width: 44vw;
+  height: 80vw;
+  right: 1%;
+  z-index: 1;
+  animation: hunting 1.5s 0s linear;
+}
+
+.bth {
+  background-color: aqua;
+  border-radius: 50px;
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+    scale: 0%;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    scale: 100%;
+  }
+}
+@keyframes hunting {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes title {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+    rotate: 0;
+  }
+
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+    rotate: 0;
+  }
+  50% {
+    transform: translateX(20px);
+    opacity: 1;
+    rotate: 10deg;
+  }
+  75% {
+    transform: translateX(-10px);
+    opacity: 1;
+    rotate: -5deg;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    rotate: 0;
+  }
+}
+@keyframes title2 {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes title3 {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
